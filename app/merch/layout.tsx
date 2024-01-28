@@ -6,10 +6,14 @@ export const metadata: Metadata = {
   description: "Taylor Swift Merchandise page",
 };
 
-export default function RootLayout({
+export default function MerchLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <div>layout</div>;
+  return (
+    <>
+      <main>{children}</main>
+    </>
+  );
 }
