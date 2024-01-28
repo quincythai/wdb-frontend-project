@@ -1,9 +1,8 @@
-import styles from "./page.module.css";
-import { Box, Image, Text, Button } from "@chakra-ui/react";
+import { Box, Image, Button, Heading } from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <Box position="relative" width="100vw" height="100vh" overflow="hidden">
+    <Box position="relative" width="100vw" height="100vh">
       <Image
         src="backgroundhd.jpeg"
         alt="Photo of Taylor Swift Eras Tour"
@@ -22,9 +21,14 @@ export default function Home() {
         padding="4"
       >
         <Box maxWidth="500px">
-          <Text fontSize={90} fontWeight="bold" textShadow="5px 5px black">
+          <Heading
+            as="h1"
+            fontSize={90}
+            fontWeight="bold"
+            textShadow="5px 5px black"
+          >
             Taylor Swift on Tour
-          </Text>
+          </Heading>
           <Button
             marginTop="4"
             width="50%"
