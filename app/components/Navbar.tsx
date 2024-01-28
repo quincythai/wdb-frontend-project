@@ -16,17 +16,18 @@ export default function Navbar() {
     >
       <Flex justifyContent="space-between" alignItems="center" gap={2}>
         <Image
-          src="/star-fall-svgrepo-com.svg"
+          src="/star-shine-svgrepo-com.svg"
           alt="Star icon"
           cursor="pointer"
           color="white"
           boxSize={12}
+          filter="invert(100%)"
         ></Image>
         <Link
           href="/"
           color="white"
           fontWeight="bolder"
-          fontSize={20}
+          fontSize={24}
           _hover={{ textDecoration: "none", opacity: 0.8 }}
           transition="opacity 0.3s ease-in-out"
         >
