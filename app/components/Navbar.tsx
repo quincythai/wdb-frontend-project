@@ -15,14 +15,17 @@ export default function Navbar() {
       alignItems="center"
     >
       <Flex justifyContent="space-between" alignItems="center" gap={2}>
-        <Image
-          src="/star-shine-svgrepo-com.svg"
-          alt="Star icon"
-          cursor="pointer"
-          color="white"
-          boxSize={12}
-          filter="invert(100%)"
-        ></Image>
+        <Link href="/">
+          <Image
+            src="/star-shine-svgrepo-com.svg"
+            alt="Star icon"
+            cursor="pointer"
+            color="white"
+            boxSize={12}
+            filter="invert(100%)"
+          ></Image>
+        </Link>
+
         <Link
           href="/"
           color="white"
