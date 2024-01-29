@@ -14,9 +14,9 @@ const Searchbar: React.FC<SearchbarProps> = ({ searchTerm, setSearchTerm }) => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         border="gray solid"
-        padding={6}
         borderRadius="0"
         color="gray.600"
+        size="lg"
       />
     </Box>
   );
