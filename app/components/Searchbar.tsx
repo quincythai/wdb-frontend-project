@@ -1,11 +1,25 @@
 import React from "react";
 import { Box, Input } from "@chakra-ui/react";
 
-export default function Searchbar() {
+interface SearchbarProps {
+  searchTerm: string;
+  setSearchTerm: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Searchbar: React.FC<SearchbarProps> = ({ searchTerm, setSearchTerm }) => {
   return (
     <Box>
-      <Input placeholder="Search... " />
-      
+      <Input
+        placeholder="Search... "
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        border="gray solid"
+        padding={6}
+        borderRadius="0"
+        color="gray.600"
+      />
     </Box>
   );
-}
+};
+
+export default Searchbar;
