@@ -1,4 +1,4 @@
-import { Box, Image, Button, Heading } from "@chakra-ui/react";
+import { Box, Image, Button, Heading, Link } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -29,16 +29,18 @@ export default function Home() {
           >
             Taylor Swift on Tour
           </Heading>
-          <Button
-            marginTop="4"
-            width="50%"
-            backgroundColor="black"
-            color="white"
-            fontSize={20}
-            padding={6}
-          >
-            See Her Perform
-          </Button>
+          <Link href="/merch">
+            <Button
+              marginTop="4"
+              width="50%"
+              backgroundColor="black"
+              color="white"
+              fontSize={20}
+              padding={6}
+            >
+              See Her Perform
+            </Button>
+          </Link>
         </Box>
       </Box>
     </Box>
